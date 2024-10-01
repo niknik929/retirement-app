@@ -1,0 +1,30 @@
+<div class="common-input-container">
+    <label class="title">{{ inputData?.titleLabel }}:</label>
+    <ng-container [ngSwitch]="inputData?.inputType">
+        <ng-container *ngSwitchDefault>
+            <div class="input-text">{{ inputData?.value }}</div>            
+        </ng-container>
+        <ng-container *ngSwitchCase="'amount'">    
+                <label *ngIf="inputData?.currency !== ''" class="currency-label">{{ inputData?.currency }}</label>
+                <div class="input-text">{{ inputData?.value | number }}</div>                
+        </ng-container>
+    </ng-container>            
+    <div *ngIf="inputData?.additionalMessage !== ''">{{ inputData?.additionalMessage }}</div>           
+    
+    <div class="action-button-and-icon-section">
+        <ng-container [ngSwitch]="inputData?.actionType">
+            <ng-container *ngSwitchCase="'action-icon'">
+                <div class="action-icon-container">
+                    <p-button icon="fas fa-pencil" (onClick)="onIconClicked(inputData?.fieldType!, inputData!)"></p-button>                
+                </div>
+            </ng-container>
+            <ng-container *ngSwitchCase="'action-button'">
+                <div class="action-button-container">
+                    <p-button label="{{ inputData?.actionButtonLabel }}" 
+                            (onClick)="onActionButtonClicked(inputData?.fieldType!, inputData!)"
+                            outlined="true" severity="secondary"/>
+                </div>                
+            </ng-container>
+        </ng-container>
+    </div>
+</div>

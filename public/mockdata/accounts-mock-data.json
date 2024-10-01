@@ -1,0 +1,38 @@
+[
+    {
+        "id": "1000001",
+        "accountNumber": "001077019304",
+        "currency": "TWD",
+        "balance": "200000000"
+    },
+    {
+        "id": "1000002",
+        "accountNumber": "001077019304",
+        "currency": "USD",
+        "balance": "100000000"
+    },
+    {
+        "id": "1000003",
+        "accountNumber": "001077019301",
+        "currency": "TWD",
+        "balance": "300000000"
+    },
+    {
+        "id": "1000004",
+        "accountNumber": "001077019302",
+        "currency": "TWD",
+        "balance": "10000000"
+    },
+    {
+        "id": "1000005",
+        "accountNumber": "001077019302",
+        "currency": "EUR",
+        "balance": "50000"
+    },
+    {
+        "id": "1000006",
+        "accountNumber": "001077019305",
+        "currency": "HKD",
+        "balance": "20000"
+    }
+]

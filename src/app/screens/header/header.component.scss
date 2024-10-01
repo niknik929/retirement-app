@@ -1,0 +1,19 @@
+.header-container {
+    width: 100%;
+    height: 100px;
+    background-color: black;
+
+    .icons-container {
+        height: 100%;
+        float: right;
+        padding-top: 40px;
+        padding-right: 30px;
+
+        .fa-user, .fa-earth-americas {
+            color: white;
+        }
+        .fa-solid:last-child {
+            padding-left: 20px;
+        }
+    }
+}

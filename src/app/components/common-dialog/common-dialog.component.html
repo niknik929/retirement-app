@@ -1,0 +1,35 @@
+<div class="common-dialog-container">
+    <div class="main-content">
+        <ng-container [ngSwitch]="dialogType">
+            <ng-container *ngSwitchCase="'accountNumber'">
+                <div class="title">Please select your debit account number:</div>
+                <div class="form-container">
+                    <div class="currency-selection">
+                        <p-dropdown [options]="currencyList"
+                                 [(ngModel)]="selectedCurrency"
+                                 optionLabel="code" [disabled]="true"/>
+                    </div>    
+                    <div class="account-number-selection">
+                        <p-dropdown [options]="accountList"
+                              [(ngModel)]="selectedAccount"
+                              optionLabel="accountNumber"
+                          />
+                    </div>
+                    <div>Account balance:</div>
+                    <div>{{ selectedAccount?.balance | number }}</div>
+                </div>
+            </ng-container>
+            <ng-container *ngSwitchDefault>
+                <div class="title">Temporarily not available</div>
+            </ng-container>
+        </ng-container>
+    </div>
+    
+    <div class="footer card flex justify-content-center" *ngIf="allowUpdate">
+        <button pButton pRipple type="button" label="Cancel" 
+            class="p-button-outlined p-button-secondary" (click)="onCancelClicked()"></button>
+        <button pButton pRipple type="button" label="Determine" class="p-button-raised" (click)="onSubmit()"></button>
+    </div>    
+    
+</div>
+

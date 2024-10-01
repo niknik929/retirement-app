@@ -1,0 +1,19 @@
+<div class="details-container">
+    <div class="detail-info-container">
+        <div class="header-section">
+           <h2>Manage</h2>
+           <div class="toolbar-section">
+               <p-button label="Enquiry history" outlined="true" severity="secondary"/>
+           </div>
+        </div>
+        <div class="detail-section">
+            <div class="form-container">
+                <div class="form-column" *ngFor="let field of fields; let i = index">
+                  <div class="form-group">
+                    <app-common-input [inputData]="field" [currencyList]="currencyList"></app-common-input>                    
+                  </div>
+                </div>
+            </div>            
+        </div>
+    </div>
+</div>

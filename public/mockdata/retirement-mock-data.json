@@ -1,0 +1,28 @@
+[
+    {
+        "userId": "A2024000001",
+        "creationDate": "2024-09-24",
+        "accountNumber": "001077019304",
+        "chargeDate": "1 of the month",
+        "investmentAmount": "50000",
+        "accumulatedInvestmentAmount": "50000",
+        "currency": "TWD",
+        "currentMarketValue": "50011",
+        "status": "Monthly change",
+        "nextPaymentDate": "2024-10-24",
+        "investmentFrequency": "per month"
+    },
+    {
+        "userId": "A2024000002",
+        "creationDate": "2024-08-01",
+        "accountNumber": "001077019301",
+        "chargeDate": "5th of the month",
+        "investmentAmount": "10000",
+        "accumulatedInvestmentAmount": "30000",
+        "currency": "TWD",
+        "currentMarketValue": "11000",
+        "status": "Quarterly change",
+        "nextPaymentDate": "2024-12-91",
+        "investmentFrequency": "per month"
+    }
+]
