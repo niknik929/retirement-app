@@ -64,7 +64,7 @@ export class CommonInputComponent {
     onActionButtonClicked( fieldType: string, selectedData: CommonInput) {
       switch (fieldType) {
         case DialogType.STATUS:
-          this.showDialog(selectedData.actionButtonLabel!, selectedData, true);
+          this.showDialog(selectedData.actionButtonLabel!, selectedData);
           break;
         case DialogType.INVESTMENT_AMOUNT:
           this.showDialog(selectedData.actionButtonLabel!);
